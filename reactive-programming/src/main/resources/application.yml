@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  data:
+    mongodb:
+      database: test
+      uri: mongodb://root:root@localhost:27017
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+#  data:
+#    mongodb:
+#      database: test
+#      uri: mongodb://root:root@localhost:27017
